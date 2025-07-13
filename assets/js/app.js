@@ -687,3 +687,51 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
       },
     });
+    var swiper = new Swiper(".mySwiper-products", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      speed: 2000,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper-products-2", {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      loop: true,
+      speed: 2000,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+      document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".header-bottom-area");
+    let lastScrollTop = 0;
+
+    header.classList.add("hidden");
+
+    window.addEventListener("scroll", function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > 200 && scrollTop > lastScrollTop) {
+        header.classList.add("sticky-visible");
+        header.classList.remove("hidden");
+      } else if (scrollTop < lastScrollTop && scrollTop < 200) {
+        header.classList.remove("sticky-visible");
+        header.classList.add("hidden");
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  });
