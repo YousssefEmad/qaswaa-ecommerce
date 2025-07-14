@@ -380,7 +380,7 @@ var MyScroll = "";
           autoPlaceholder: "ON",
           dropdownContainer: document.body,
           formatOnDisplay: true,
-          initialCountry: "us",
+          initialCountry: "eg",
           placeholderNumberType: "MOBILE",
           preferredCountries: ['us', 'gb', 'in'],
           separateDialCode: true
@@ -700,21 +700,44 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          577: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+        }
     });
     var swiper = new Swiper(".mySwiper-products-2", {
-      slidesPerView: 6,
-      spaceBetween: 30,
-      loop: true,
-      speed: 2000,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+        // slidesPerView: 6,
+        spaceBetween: 30,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          577: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 6,
+          },
+        }
+      });
+      
       document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector(".header-bottom-area");
     let lastScrollTop = 0;
@@ -734,4 +757,28 @@ var swiper = new Swiper(".mySwiper", {
 
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
+  });
+  var deleteFile = function () {
+
+    $(".remove").on("click", function (e) {
+      e.preventDefault();
+      $(this).closest(".file-delete").remove();
+    });
+
+    $('.tf-compapre-button-clear-all').on("click", function (e) {
+      $(".tf-compare-item").remove();
+    });
+
+    $(".tf-compare-item .icon").on("click", function (e) {
+      $(this).closest(".tf-compare-item").remove();
+    });
+
+    $(".tf-mini-cart-remove").on("click", function (e) {
+      $(this).closest(".cart-item").remove();
+    });
+
+  };
+
+  $(document).ready(function () {
+    deleteFile();
   });
