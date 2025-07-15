@@ -631,7 +631,7 @@ var MyScroll = "";
 })(window, document, jQuery);
 
 var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
+      spaceBetween: 15,
       centeredSlides: true,
       loop: true,
       speed:2000,
@@ -650,7 +650,7 @@ var swiper = new Swiper(".mySwiper", {
       },
     });
     var swiper = new Swiper(".mySwiper2", {
-      spaceBetween: 30,
+      spaceBetween: 15,
       centeredSlides: true,
       loop: true,
       speed:2500,
@@ -669,7 +669,7 @@ var swiper = new Swiper(".mySwiper", {
       },
     });
     var swiper = new Swiper(".mySwiper3", {
-      spaceBetween: 30,
+      spaceBetween: 15,
       centeredSlides: true,
       loop: true,
       speed:2500,
@@ -689,7 +689,7 @@ var swiper = new Swiper(".mySwiper", {
     });
     var swiper = new Swiper(".mySwiper-products", {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 15,
       loop: true,
       speed: 2000,
       autoplay: {
@@ -714,7 +714,7 @@ var swiper = new Swiper(".mySwiper", {
     });
     var swiper = new Swiper(".mySwiper-products-2", {
         // slidesPerView: 6,
-        spaceBetween: 30,
+        spaceBetween: 15,
         loop: true,
         speed: 2000,
         autoplay: {
