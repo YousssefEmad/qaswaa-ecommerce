@@ -46,7 +46,9 @@ ol.list-style li::marker {
 html {
   scroll-behavior: smooth;
 }
-
+.h-74{
+  height: 74vh;
+}
 body {
   font-family: "Bai Jamjuree", sans-serif;
   color: #0C0C0D;
@@ -1079,6 +1081,7 @@ Elements
   justify-content: center;
   gap: 8px;
   width: max-content;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .cus-btn-3 {
@@ -1943,11 +1946,11 @@ header .header-section .header-top .header-end .top-bar-links p {
 }
 header .header-section .header-top .header-end .top-bar-links p:hover {
   transition: all 0.5s ease-in-out;
-  color: #ffe603;
+  color: #323793;
 }
 header .header-section .header-top .header-end .top-bar-links:hover {
   transition: all 0.5s ease-in-out;
-  color: #ffe603;
+  color: #323793;
 }
 header .header-section .header-center {
   /* padding: clamp(16px, 1.25vw, 32px) 0; */
@@ -3855,6 +3858,7 @@ footer .footer-bottom-bar {
   height: clamp(150px, 10.417vw, 350px);
   display: grid;
   align-items: center;
+  overflow: hidden;
 }
 @media (max-width: 490px) {
   .title-banner {
@@ -3868,7 +3872,8 @@ footer .footer-bottom-bar {
   position: relative;
 }
 .title-banner .banner-wrapper .banner-image1 {
-  width: clamp(107px, 20.885vw, 520px);
+  height: 195px;
+  /* width: clamp(107px, 20.885vw, 520px); */
   position: absolute;
   left: 0;
   top: 50%;
@@ -3880,7 +3885,8 @@ footer .footer-bottom-bar {
   }
 }
 .title-banner .banner-wrapper .banner-image2 {
-  width: clamp(68px, 11.797vw, 220px);
+      height: 195px;
+  /* width: clamp(68px, 11.797vw, 220px); */
   position: absolute;
   right: 0;
   top: 50%;
@@ -4738,7 +4744,10 @@ footer .footer-bottom-bar {
     padding: 0;
   }
 }
-
+.about-image img{
+  width: 100%;
+  height: 500px;
+}
 .whyChoose-us .our-block {
   padding: clamp(16px, 1.25vw, 36px);
 }
@@ -4751,7 +4760,9 @@ footer .footer-bottom-bar {
   border: 1px solid #ec1d23;
   border-radius: 5px;
 }
-
+.whyChoose-us .our-block .icon-block img{
+  filter: brightness(0);
+}
 .team-section .team-block {
   padding: clamp(16px, 1.25vw, 32px);
   border-radius: clamp(6px, 0.521vw, 20px);
@@ -4904,6 +4915,7 @@ footer .footer-bottom-bar {
   background-color: #fafafa;
   border-radius: clamp(8px, 0.781vw, 30px);
   height: 100%;
+  width: 50%;
 }
 @media (max-width: 1024px) {
   .account.account-1 {
@@ -5386,14 +5398,21 @@ footer .footer-bottom-bar {
 }
 
 .sign-submit-btn {
-  width: 25%;
+  width: 50% !important;
 }
 @media (max-width: 490px) {
   .sign-submit-btn {
     width: 100%;
   }
 }
+#recover:target ~ #login,
+#recover {
+  display: none;
+}
 
+#recover:target {
+  display: block;
+}
 .billing-detail .shipping-radio-container {
   padding: clamp(16px, 1.25vw, 32px);
   border-radius: clamp(6px, 0.521vw, 20px);
