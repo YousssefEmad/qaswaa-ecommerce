@@ -5893,6 +5893,9 @@ footer .footer-bottom-bar {
     width: 100px;
     height: auto;
   }
+  .account{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .zui-wrapper .zui-table .zui-sticky-col {
