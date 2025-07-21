@@ -782,3 +782,31 @@ var swiper = new Swiper(".mySwiper", {
   $(document).ready(function () {
     deleteFile();
   });
+  var tabs = function () {
+    $(".widget-tabs").each(function () {
+      $(this)
+        .find(".widget-menu-tab")
+        .children(".item-title")
+        .on("click", function () {
+          var liActive = $(this).index();
+
+          $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+
+          var contentActive = $(this)
+            .closest(".widget-tabs")
+            .find(".widget-content-tab")
+            .children()
+            .eq(liActive);
+
+          contentActive.addClass("active").fadeIn("slow");
+          contentActive.siblings().removeClass("active").hide();
+        });
+    });
+  };
+
+  $(document).ready(function () {
+    tabs();
+  });
