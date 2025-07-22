@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Accessory-Store">
+
+    <title>QASWAA</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/qaswaa-logo.webp">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/country-code.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+     <!-- Preloader -->
+     <div id="preloader">
+        <div class="preloader">
+            <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                    <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                        <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                        <circle cx="43" cy="111" r="13" />
+                        <circle cx="102" cy="111" r="13" />
+                    </g>
+                    <g class="cart__lines" stroke="currentColor">
+                        <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                        <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                        </g>
+                        <g class="cart__wheel2" transform="rotate(90,102,111)">
+                            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+        
+
+        <!-- Main Sections -->
+        <main class="main-wrapper bg-lightest-gray">
+
+             <section class="invoice-section">
+                <div class="container">
+                    <div class="cus-container2">
+        <div class="top">
+            <a href="#" class="tf-btn btn-fill cus-btn">
+                Print this invoice
+            </a>
+        </div>
+        <div class="box-invoice">
+            <div class="header">
+                <div class="wrap-top">
+                    <div class="box-left">
+                        <a href="index.html">
+                            <img src="assets/media/qaswaa-logo.webp" alt="Logo" class="logo">
+                        </a>
+                    </div>
+                    <div class="box-right">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <p class="title">Invoice #</p>
+                            <span class="code-num">0043128641</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-date">
+                    <div class="box-left">
+                        <label>Invoice Date:</label>
+                        <span class="date">03/6/2025</span>
+                    </div>
+                    <div class="box-right">
+                        <label>Due Date:</label>
+                        <span class="date">03/6/2025</span>
+                    </div>
+                </div>
+                <div class="wrap-info">
+                    <div class="box-left">
+                        <p class="title">Supplier</p>
+                        <p class="sub">Qaswaa</p>
+                        <p class="desc">12 El-Nasr Street, Maadi, <br> Cairo, Egypt</p>
+                    </div>
+                    <div class="box-right">
+                        <p class="title">Customer</p>
+                        <p class="sub">youssef emad</p>
+                        <p class="desc">329 Queensberry Street, North Melbourne <br> VIC 3051, Egypt.</p>
+                    </div>
+                </div>
+                <div class="wrap-table-invoice">
+                    <table class="invoice-table">
+                        <thead>
+                            <tr class="title">
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>VAT (14%)</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="content">
+                                <td>Pan non stick coated 26 cm</td>
+                                <td>EGP 200.00</td>
+                                <td>EGP 28.00</td>
+                                <td>EGP 228.00</td>
+                            </tr>
+                            <tr class="content">
+                                <td>Pan non stick coated 26 cm</td>
+                                <td>EGP 350.00</td>
+                                <td>EGP 49.00</td>
+                                <td>EGP 399.00</td>
+                            </tr>
+                            <tr class="content">
+                                <td class="total">Total Due</td>
+                                <td></td>
+                                <td></td>
+                                <td class="total">EGP 627.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer">
+                <ul class="box-contact">
+                    <li>www.qaswaa.com</li>
+                    <li>invoice@qaswaa.com</li>
+                    <li>+20 112 345 6789</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+                </div>
+    
+</section>
+
+        </main>
+        <!-- Main Sections -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+
+    <!-- Mobile Menu Start -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/media/qaswaa-logo.webp" alt=""></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <div class="cart-wishlist-mobile">
+                <a href="wishlist.html" class="button-block d-sm-flex ">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#" class="button-block d-sm-flex cart-button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+            </div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:">qaswaa@company.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+">+123 (4567) 890</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__social">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- Filter Sidebar -->
+    <div class="sidebar toggle-sidebar bg-white">
+        <form action="shop-grid-1.html" class="mb-24">
+            <input type="text" name="search" id="searchBar" class="form-control" placeholder="Search Here...">
+            <button>
+                <i class="fa-light fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="hr-line mb-24"></div>
+        <div class="category-block box-1 mb-24">
+            <div class="title mb-24" data-count="1">
+                <h6>Product Categories</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <ul class="list-unstyled">
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="cable-check" class="sub-check-box">
+                                <label for="cable-check">Cooking</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="hdmi-check">
+                                    <label for="hdmi-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="ethernet-check">
+                                    <label for="ethernet-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <div class="check-block">
+                                    <input type="checkbox" id="usb-check">
+                                    <label for="usb-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="cases-check" class="sub-check-box">
+                                <label for="cases-check">Pastry-Bakery</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="cover-check">
+                                    <label for="cover-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="mobile-check">
+                                    <label for="mobile-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="screen-check" class="sub-check-box">
+                                <label for="screen-check">Housekeeping</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="glass-check">
+                                    <label for="glass-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="gorilla-check">
+                                    <label for="gorilla-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <div class="check-block">
+                                    <input type="checkbox" id="matte-check">
+                                    <label for="matte-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="charger-check" class="sub-check-box">
+                                <label for="charger-check">Buffet</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="adaptor-check">
+                                    <label for="adaptor-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="rapid-check">
+                                    <label for="rapid-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="headphone-check" class="sub-check-box">
+                                <label for="headphone-check">Tableware</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="earbuds-check">
+                                    <label for="earbuds-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="handfree-check">
+                                    <label for="handfree-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr-line mb-24"> </div>
+        <div class="category-block box-2 mb-24">
+            <div class="title mb-32" data-count="2">
+                <h6>Filter By Price</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <div class="wrapper">
+                    <div class="price-input mb-24">
+                        <div class="field">
+                            <div class="fw-500 mb-4p">Low</div>
+                            <input type="number" class="input-min" value="2500">
+                        </div>
+                        <div class="field">
+                            <div class="fw-500 mb-4p">High</div>
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-line mb-24"></div>
+        <div class="category-block box-3 mb-24">
+            <div class="title mb-32" data-count="3">
+                <h6>Filter By Availability</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center justify-content-between mb-12">
+                        <div class="check-block">
+                            <input type="checkbox" id="check-64">
+                            <label for="check-64">In stock</label>
+                        </div>
+                        <p class="light-gray fw-400">(20)</p>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-12">
+                        <div class="check-block">
+                            <input type="checkbox" id="check-128">
+                            <label for="check-128">Out of stock</label>
+                        </div>
+                        <p class="light-gray fw-400">(20)</p>
+                    </li>
+                     
+                </ul>
+            </div>
+        </div>
+        <div class="hr-line mb-24"></div>
+        <div class="category-block box-6 mb-24">
+            <div class="title mb-24" data-count="6">
+                <h6>Filter By Reviews</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating">
+                        <input type="radio" id="1-star" checked name="rating" value="1">
+                        <label for="1-star" class="star">&#9733;</label>
+                        <input type="radio" id="2-stars" name="rating" value="2">
+                        <label for="2-stars" class="star">&#9733;</label>
+                        <input type="radio" id="3-stars" name="rating" value="3">
+                        <label for="3-stars" class="star">&#9733;</label>
+                        <input type="radio" id="4-stars" name="rating" value="4">
+                        <label for="4-stars" class="star">&#9733;</label>
+                        <input type="radio" id="5-stars" name="rating" value="5">
+                        <label for="5-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating">
+                        <input type="radio" id="11-star" name="rating2" value="11">
+                        <label for="11-star" class="star">&#9733;</label>
+                        <input type="radio" id="12-stars" checked name="rating2" value="12">
+                        <label for="12-stars" class="star">&#9733;</label>
+                        <input type="radio" id="13-stars"  name="rating2" value="13">
+                        <label for="13-stars" class="star">&#9733;</label>
+                        <input type="radio" id="14-stars" name="rating2" value="14">
+                        <label for="14-stars" class="star">&#9733;</label>
+                        <input type="radio" id="15-stars" name="rating2" value="15">
+                        <label for="15-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating ">
+                        <input type="radio" id="21-star" name="rating3" value="21">
+                        <label for="21-star" class="star">&#9733;</label>
+                        <input type="radio" id="22-stars" name="rating3" value="22">
+                        <label for="22-stars" class="star">&#9733;</label>
+                        <input type="radio" id="23-stars" checked name="rating3" value="23">
+                        <label for="23-stars" class="star">&#9733;</label>
+                        <input type="radio" id="24-stars" name="rating3" value="24">
+                        <label for="24-stars" class="star">&#9733;</label>
+                        <input type="radio" id="25-stars" name="rating3" value="25">
+                        <label for="25-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating ">
+                        <input type="radio" id="31-star" name="rating4" value="31">
+                        <label for="31-star" class="star">&#9733;</label>
+                        <input type="radio" id="32-stars" name="rating4" value="32">
+                        <label for="32-stars" class="star">&#9733;</label>
+                        <input type="radio" id="33-stars" name="rating4" value="33">
+                        <label for="33-stars" class="star">&#9733;</label>
+                        <input type="radio" id="34-stars" checked name="rating4" value="34">
+                        <label for="34-stars" class="star">&#9733;</label>
+                        <input type="radio" id="35-stars" name="rating4" value="35">
+                        <label for="35-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating">
+                        <input type="radio" id="41-star" name="rating5" value="41">
+                        <label for="41-star" class="star">&#9733;</label>
+                        <input type="radio" id="42-stars" name="rating5" value="42">
+                        <label for="42-stars" class="star">&#9733;</label>
+                        <input type="radio" id="43-stars" name="rating5" value="43">
+                        <label for="43-stars" class="star">&#9733;</label>
+                        <input type="radio" id="44-stars" name="rating5" value="44">
+                        <label for="44-stars" class="star">&#9733;</label>
+                        <input type="radio" id="45-stars" checked name="rating5" value="45">
+                        <label for="45-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- Filter Sidebar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="productQuickView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="shop-detail">
+                        <div class="detail-wrapper">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="quick-image-box">
+                                        <img src="assets/media/products/preparing-pru-4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="product-text-container bg-white br-20">
+                                        <div class="close-content text-end">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <h3 class="fw-600 mb-16">Pan non stick coated 26 cm</h3>
+                                        <div class="d-flex align-items-center flex-wrap gap-16 mb-24">
+                                            <h5 class="color-sec">★★★★<span class="light-gray">★</span></h5>
+                                            <div class="vr-line vr-line-2"></div>
+                                            <p class="light-gray">Brand: <span class="color-primary">Beast</span></p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-16 mb-24">
+                                            <p class="light-gray text-decoration-line-through">500.00 EGP</p>
+                                            <h5>120.00 EGP</h5>
+                                            <span class="label white">-12%</span>
+                                        </div>
+                                        <p class="light-gray mb-24">
+                                            Lorem ipsum dolor sit amet consectetur. Purus nulla nec in ac malesuada et nisi ipsum. Massa scelerisque...
+                                        </p>
+                                        <div class="hr-line mb-24"></div>
+                                        <div class="function-bar mb-16">
+                                            <div class="quantity quantity-wrap">
+                                                <div class="input-area quantity-wrap">
+                                                    <input class="decrement" type="button" value="-">
+                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1"
+                                                        class="number">
+                                                    <input class="increment" type="button" value="+">
+                                                </div>
+                                            </div>
+                                            <div class="cart-btn w-100">
+                                                <a class="cus-btn-2 cart-button w-100">Add to Cart</a>
+                                            </div>
+                                            <div class="wishlist-btn">
+                                                <a href="">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="hr-line mb-24"></div>
+                                        <div class="d-flex align-items-center gap-16 mb-16">
+                                            <h6>Category:</h6>
+                                            <p class="light-gray">Cooking , Preparing , Housekeeping</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-16 mb-16">
+                                            <h6>Tags:</h6>
+                                            <p class="light-gray">Hotiles , <span>Shopping , </span> Services</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Shopping Cart Popup Start -->
+    <aside id="sidebar-cart">
+        <div class="title-cart-block mb-32 bg-lightest-gray">
+            <h6>Shopping Cart (02)</h6>
+            <a href="#" class="close-button close-popup"><span class="close-icon">X</span></a>
+        </div>
+        <ul class="product-list p-24">
+            <li class="product-item cart-item mb-24">
+                <span class="item-image">
+                    <img src="assets/media/products/preparing-pru-4.png" alt="Product Photo">
+                </span>
+                <div class="product-text">
+                    <div class="prod-title">
+                        <a href="shop-detail.html"><h6>Pan non stick coated 26 cm</h6></a>
+                        <a href="javascript:;" class="cancel tf-mini-cart-remove">
+                            <img src="assets/media/images/cancel.png" alt="">
+                        </a>
+                    </div>
+                    <div class="prod-desc">
+                        <div>
+                            <p class="fw-500">320.00 EGP</p>
+                        </div>
+                        <div class="quantity quantity-wrap d-inline-flex">
+                            <div class="input-area quantity-wrap">
+                                <input class="decrement" type="button" value="-">
+                                <input type="text" name="quantity" value="1" maxlength="2" size="1"
+                                    class="number">
+                                <input class="increment" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hr-line mb-24"></li>
+            <li class="product-item cart-item mb-24">
+                <span class="item-image">
+                    <img src="assets/media/products/cook-pru-3.png" alt="Product Photo">
+                </span>
+                <div class="product-text">
+                    <div class="prod-title mb-16">
+                        <a href="shop-detail.html"><h6>Pan non stick coated 26 cm</h6></a>
+                        <a href="javascript:;" class="cancel tf-mini-cart-remove">
+                            <img src="assets/media/images/cancel.png" alt="">
+                        </a>
+                    </div>
+                    <div class="prod-desc">
+                        <div>
+                            <p class="fw-500">320.00 EGP</p>
+                        </div>
+                        <div class="quantity quantity-wrap d-inline-flex">
+                            <div class="input-area quantity-wrap">
+                                <input class="decrement" type="button" value="-">
+                                <input type="text" name="quantity" value="1" maxlength="2" size="1"
+                                    class="number">
+                                <input class="increment" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hr-line mb-24"></li>
+            <li class="product-item cart-item mb-24">
+                <span class="item-image">
+                    <img src="assets/media/products/cook-pru-3.png" alt="Product Photo">
+                </span>
+                <div class="product-text">
+                    <div class="prod-title mb-16">
+                        <a href="shop-detail.html"><h6>Pan non stick coated 26 cm</h6></a>
+                        <a href="javascript:;" class="cancel tf-mini-cart-remove">
+                            <img src="assets/media/images/cancel.png" alt="">
+                        </a>
+                    </div>
+                    <div class="prod-desc">
+                        <div>
+                            <p class="fw-500">320.00 EGP</p>
+                        </div>
+                        <div class="quantity quantity-wrap d-inline-flex">
+                            <div class="input-area quantity-wrap">
+                                <input class="decrement" type="button" value="-">
+                                <input type="text" name="quantity" value="1" maxlength="2" size="1"
+                                    class="number">
+                                <input class="increment" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hr-line mb-24"></li>
+        </ul>
+        <div class="price-total p-24">
+            <span class="h5">SUBTOTAL</span>
+            <span class="color-primary h5">2000.00 EGP</span>
+        </div>
+        <div class="tf-cart-tax">Taxes and <a href="#">shipping</a> calculated at checkout</div>
+        <div class="hr-line mb-24"></div>
+        <div class="action-buttons p-24">
+            <a href="cart.html" class="cus-btn-2">VIEW CART</a>
+            <a href="checkout.html" class="cus-btn active-btn">CHECKOUT</a>
+        </div>
+    </aside>
+    <div id="sidebar-cart-curtain" class="close-popup"></div>
+    <!-- Shopping Cart Popup End -->
+
+    <!-- Modal -->
+   <div class="modal fade" id="comparepopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog compare-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="zui-wrapper">
+                        <div class="close-content text-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="container" class="zui-scroller">
+                            <table class="zui-table">
+                                <thead>
+                                    <tr>
+                                        <th class="zui-sticky-col">&nbsp;</th>
+                                        <th id="product-col" class="table-col">
+                                            <img class="product-img mb-16" src="assets/media/products/cook-pru-3.png" alt="">
+                                            <span class="h6">
+                                                <a href="#" class="product-link">Pan non stick coated 26 cm
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th class="table-col">
+                                            <img class="product-img mb-16" src="assets/media/products/cook-pru-5.jpeg.jpg" alt="">
+                                            <span class="h6">
+                                                <a href="#" class="product-link">Pan non stick coated 26 cm
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th class="table-col">
+                                            <img class="product-img mb-16" src="assets/media/products/preparing-pru-4.png" alt="">
+                                            <span class="h6">
+                                                <a href="#" class="product-link">Pan non stick coated 26 cm
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th class="table-col">
+                                            <img class="product-img mb-16" src="assets/media/products/produ-7.png" alt="">
+                                            <span class="h6">
+                                                <a href="#" class="product-link">Pan non stick coated 26 cm
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th class="table-col">
+                                            <img class="product-img mb-16" src="assets/media/products/produ-5.jpg" alt="">
+                                            <span class="h6">
+                                                <a href="#" class="product-link">Pan non stick coated 26 cm</a>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="zui-sticky-col">Price</td>
+                                        <td class="text-center"><strong>120.00 EGP</strong></td>
+                                        <td class="text-center"><strong>300.00 EGP</strong></td>
+                                        <td class="text-center"><strong>500.00 EGP</strong></td>
+                                        <td class="text-center"><strong>1200.00 EGP</strong></td>
+                                        <td class="text-center"><strong>700.00 EGP</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col zui-stripe-row">Description</td>
+                                        <td>trueval round pan 28 cm</td>
+                                        <td>Trueval pan cm</td>
+                                        <td>soup chafing dish</td>
+                                        <td>rectangular shape Buffet platter 50*30 cm</td>
+                                        <td>soup chafing dish</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col">Storage</td>
+                                        <td>up to 16 samples</td>
+                                        <td>up to 48 samples</td>
+                                        <td>up to 16 samples</td>
+                                        <td>up to 16 samples</td>
+                                        <td>up to 32 samples</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col zui-stripe-row">SKU</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-plus-circle"></i>Optional</td>
+                                        <td><i class="far fa-times-circle"></i>Not Available</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col">Availablity</td>
+                                        <td><i class="far fa-plus-circle"></i>Optional</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col zui-stripe-row">Weight</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col">Dimensions</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="zui-sticky-col zui-stripe-row">Colors
+                                        </td>
+                                        <td><i class="far fa-times-circle"></i>Not Available</td>
+                                        <td><i class="far fa-check-circle"></i>Included</td>
+                                        <td><i class="far fa-times-circle"></i>Not Available</td>
+                                        <td><i class="far fa-times-circle"></i>Not Available</td>
+                                        <td><i class="far fa-times-circle"></i>Not Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery-validator.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/countryCode.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script> $('#footer').load('footer.html') </script>
+
+</body>
+
+</html>
