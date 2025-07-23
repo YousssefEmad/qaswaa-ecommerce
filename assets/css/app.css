@@ -3862,7 +3862,7 @@ footer .footer-bottom-bar {
   list-style: none;
   width: 100px;
   padding: 15px;
-  background: #383838;
+  background: #d9d9d9;
   transition: .5s ease-in-out;
 }
 .social-link li:hover{
@@ -3876,7 +3876,7 @@ footer .footer-bottom-bar {
   left: -40px;
   width: 40px;
   height: 100%;
-  background: #4c4c4c;
+  background: #fff;
   transform-origin: right;
   transform: skewY(45deg);
   transition: 0.5s ease-in-out;
@@ -3892,7 +3892,7 @@ footer .footer-bottom-bar {
   left: 0;
   width: 100%;
   height: 40px;
-  background: #545454;
+  background: #fff;
   transform-origin: bottom;
   transform: skewX(45deg);
   box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.3);
