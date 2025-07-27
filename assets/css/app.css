@@ -6714,6 +6714,18 @@ html[dir="rtl"] header .header-section .header-bottom-area .nav-container .all-c
     right: -80px;
     left: 0;
  }
+ html[dir="rtl"] .btn-sidebar-account, html[dir="rtl"] .btn-sidebar-style2{
+  left: unset;
+  right: 5px;
+ }
+ html[dir="rtl"] .widget-timeline .timeline::before{
+  right: 10px;
+  left: unset;
+ }
+ html[dir="rtl"] .widget-timeline .timeline > li .timeline-badge{
+      right: 0;
+      left: unset;
+ }
 @media (max-width: 399px) {
     html[dir="rtl"] header .header-section .mixin-container .input-field input {
        padding: 8px 0px 8px 75px;
