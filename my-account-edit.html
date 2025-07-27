@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
         </div>
     </div>
     <!-- Preloader -->
-    
+
     <!-- Main Wrapper Start -->
     <div id="scroll-container">
         <!-- Header Menu Start -->
@@ -466,32 +466,42 @@
         <!-- Main Sections -->
         <main class="main-wrapper bg-lightest-gray">
 
-            <!-- Title Banner Start -->
-            <section class="title-banner">
-                <div class="container-fluid">
-                    <div class="banner-wrapper">
-                        <img src="assets/media/products/p-1.png" alt="" class="banner-image1">
-                        <h1 class="dark-black fw-600">Contact Us</h1>
-                        <img src="assets/media/products/p-2.png" alt="" class="banner-image2">
+                    <!-- page-cart -->
+        <section class="flat-spacing-11">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="wrap-sidebar-account">
+                            <div class="user-img">
+                                <div class="img-user-account">
+                                    <img src="assets/media/team/person-2.png" alt="">
+                                </div>
+                                <h6>Sondos Mohamed</h6>
+                                <a href="">sondos20017@gmail.com</a>
+                            </div>
+                            <ul class="my-account-nav">
+                                <li><a href="my-account.html" class="my-account-nav-item">Dashboard</a></li>
+                                <li><a href="my-account-orders.html" class="my-account-nav-item ">Orders</a></li>
+                                <li><a href="my-account-address.html" class="my-account-nav-item">Address</a></li>
+                                <li><a href="my-account-edit.html" class="my-account-nav-item active">Edit Account</a></li>
+                                <li><a href="wishlist.html" class="my-account-nav-item">Wishlist</a></li>
+                                <li><a href="login.html" class="my-account-nav-item">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- Title Banner End -->
-
-            <section class="contact-section py-40">
-                <div class="container-fluid">
-                    
-
-                    <!-- Contact Wrapper Start -->
-                    <div class="contact-wrapper">
-                        <div class="row row-gap-4">
-                            <div class="col-xl-6 col-lg-6">
+                    <div class="col-lg-9">
+                      <div class="my-account-content account-edit">
+                            <div class="edit-account-info">
                                 <div class="form-container">
                                     <form action="" method="post" class="contact-form">
-                                        <h3 class="mb-12">Customer Support</h3>
-                                        <p class="light-gray mb-24">Your email address is safe with us. Required fields are noted with *</p>
+                                        <div class="tf-field style-1 mb-16">
+                                        <input class="tf-field-input tf-input" type="file" hidden  id="user-imag-inp" name="image"  onchange="previewImage(event)" >
+                                        <img src="https://becooleg.com/uploads/user.png" alt="User Image"  id="user-image-preview" onclick="document.getElementById('user-imag-inp').click()"   >
+                                        </div>
+                                        
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <h6 class="mb-20">Information Change</h6>
+                                            <div class="col-md-12">
                                                 <div class="input-block mb-16">
                                                     <input type="text" name="name" id="firstName" class="form-control" required placeholder="First Name">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -504,7 +514,7 @@
                                                     </svg>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="input-block mb-16">
                                                     <input type="text" name="lastname" id="lastName" class="form-control" required placeholder="Phone Number">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none">
@@ -524,127 +534,86 @@
                                                     </svg>
                                                 </div>
                                             </div>
+                                            <h6 class="mb-20">Password Change</h6>
                                             <div class="col-md-12">
                                                 <div class="input-block mb-16">
-                                                    <textarea name="message" id="comments" class="form-control" placeholder="Write Your Message"></textarea>
-                                                </div>
+                                                <input type="password" name="password" autocomplete="off" class="form-control" placeholder="Current password">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_7949_46264)">
+                                                        <path
+                                                            d="M19.8898 10.3421C20.0368 10.1378 20.0368 9.86227 19.8898 9.65785C19.8451 9.5957 18.7753 8.11922 17.0388 6.62602L19.8898 10.3421ZM19.8898 10.3421C19.8451 10.4043 18.7753 11.8808 17.0388 13.374C16.0117 14.2571 14.9628 14.9625 13.9213 15.4705M19.8898 10.3421L6.33476 14.9827M2.96124 13.374L3.31779 12.9593L0.110303 10.3421C0.15499 10.4043 1.22472 11.8808 2.96124 13.374ZM2.96124 13.374L3.31781 12.9593M2.96124 13.374L3.31781 12.9593M3.31781 12.9593C3.32463 12.9652 3.33146 12.971 3.3383 12.9769C3.78259 13.3578 4.30002 13.7615 4.87535 14.1434C4.94379 14.1888 5.01304 14.2339 5.08309 14.2787L5.09608 14.287L5.10946 14.2946L5.99122 14.7983L6.16418 14.8971L6.17856 14.9054L6.19335 14.9128C6.23538 14.9339 6.27765 14.9549 6.32015 14.9756L6.07878 15.4705M3.31781 12.9593L5.73444 15.2904C5.83141 15.341 5.9444 15.3999 6.07878 15.4705M6.07878 15.4705L6.33476 14.9827M6.07878 15.4705C7.40507 16.1173 8.72437 16.4453 10 16.4453C11.2757 16.4453 12.595 16.1173 13.9213 15.4705M6.33476 14.9827C7.43018 15.5147 8.67705 15.8984 10 15.8984C11.3151 15.8984 12.56 15.5261 13.6814 14.9787L13.9213 15.4705M6.33476 14.9827L13.6814 14.9787L13.9213 15.4705M13.5053 9.93776C13.5053 11.8737 11.936 13.443 10 13.443C8.06414 13.443 6.49478 11.8737 6.49478 9.93776C6.49478 8.00186 8.06414 6.4325 10 6.4325C11.936 6.4325 13.5053 8.00186 13.5053 9.93776ZM13.9212 4.52961L13.9212 4.52972L13.9212 4.52961Z"
+                                                            stroke="#141516" stroke-width="1.25" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_7949_46264">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
                                             </div>
-                                            <div class="col-md-6">
-                                                <button type="submit" class="cus-btn-3">Send Message</button>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="input-block mb-16">
+                                                <input type="password" name="password" autocomplete="off" class="form-control" placeholder="New password">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_7949_46264)">
+                                                        <path
+                                                            d="M19.8898 10.3421C20.0368 10.1378 20.0368 9.86227 19.8898 9.65785C19.8451 9.5957 18.7753 8.11922 17.0388 6.62602L19.8898 10.3421ZM19.8898 10.3421C19.8451 10.4043 18.7753 11.8808 17.0388 13.374C16.0117 14.2571 14.9628 14.9625 13.9213 15.4705M19.8898 10.3421L6.33476 14.9827M2.96124 13.374L3.31779 12.9593L0.110303 10.3421C0.15499 10.4043 1.22472 11.8808 2.96124 13.374ZM2.96124 13.374L3.31781 12.9593M2.96124 13.374L3.31781 12.9593M3.31781 12.9593C3.32463 12.9652 3.33146 12.971 3.3383 12.9769C3.78259 13.3578 4.30002 13.7615 4.87535 14.1434C4.94379 14.1888 5.01304 14.2339 5.08309 14.2787L5.09608 14.287L5.10946 14.2946L5.99122 14.7983L6.16418 14.8971L6.17856 14.9054L6.19335 14.9128C6.23538 14.9339 6.27765 14.9549 6.32015 14.9756L6.07878 15.4705M3.31781 12.9593L5.73444 15.2904C5.83141 15.341 5.9444 15.3999 6.07878 15.4705M6.07878 15.4705L6.33476 14.9827M6.07878 15.4705C7.40507 16.1173 8.72437 16.4453 10 16.4453C11.2757 16.4453 12.595 16.1173 13.9213 15.4705M6.33476 14.9827C7.43018 15.5147 8.67705 15.8984 10 15.8984C11.3151 15.8984 12.56 15.5261 13.6814 14.9787L13.9213 15.4705M6.33476 14.9827L13.6814 14.9787L13.9213 15.4705M13.5053 9.93776C13.5053 11.8737 11.936 13.443 10 13.443C8.06414 13.443 6.49478 11.8737 6.49478 9.93776C6.49478 8.00186 8.06414 6.4325 10 6.4325C11.936 6.4325 13.5053 8.00186 13.5053 9.93776ZM13.9212 4.52961L13.9212 4.52972L13.9212 4.52961Z"
+                                                            stroke="#141516" stroke-width="1.25" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_7949_46264">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="input-block mb-16">
+                                                <input type="password" name="password" autocomplete="off" class="form-control" placeholder="Confirm password">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_7949_46264)">
+                                                        <path
+                                                            d="M19.8898 10.3421C20.0368 10.1378 20.0368 9.86227 19.8898 9.65785C19.8451 9.5957 18.7753 8.11922 17.0388 6.62602L19.8898 10.3421ZM19.8898 10.3421C19.8451 10.4043 18.7753 11.8808 17.0388 13.374C16.0117 14.2571 14.9628 14.9625 13.9213 15.4705M19.8898 10.3421L6.33476 14.9827M2.96124 13.374L3.31779 12.9593L0.110303 10.3421C0.15499 10.4043 1.22472 11.8808 2.96124 13.374ZM2.96124 13.374L3.31781 12.9593M2.96124 13.374L3.31781 12.9593M3.31781 12.9593C3.32463 12.9652 3.33146 12.971 3.3383 12.9769C3.78259 13.3578 4.30002 13.7615 4.87535 14.1434C4.94379 14.1888 5.01304 14.2339 5.08309 14.2787L5.09608 14.287L5.10946 14.2946L5.99122 14.7983L6.16418 14.8971L6.17856 14.9054L6.19335 14.9128C6.23538 14.9339 6.27765 14.9549 6.32015 14.9756L6.07878 15.4705M3.31781 12.9593L5.73444 15.2904C5.83141 15.341 5.9444 15.3999 6.07878 15.4705M6.07878 15.4705L6.33476 14.9827M6.07878 15.4705C7.40507 16.1173 8.72437 16.4453 10 16.4453C11.2757 16.4453 12.595 16.1173 13.9213 15.4705M6.33476 14.9827C7.43018 15.5147 8.67705 15.8984 10 15.8984C11.3151 15.8984 12.56 15.5261 13.6814 14.9787L13.9213 15.4705M6.33476 14.9827L13.6814 14.9787L13.9213 15.4705M13.5053 9.93776C13.5053 11.8737 11.936 13.443 10 13.443C8.06414 13.443 6.49478 11.8737 6.49478 9.93776C6.49478 8.00186 8.06414 6.4325 10 6.4325C11.936 6.4325 13.5053 8.00186 13.5053 9.93776ZM13.9212 4.52961L13.9212 4.52972L13.9212 4.52961Z"
+                                                            stroke="#141516" stroke-width="1.25" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_7949_46264">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            </div>
+                                            
+                                           
+                                            <div class="col-md-12">
+                                                <button type="submit" class="cus-btn-3 w-100">Save Channge</button>
                                             </div>
                                             <div id="message" class="alert-msg"></div>
                                         </div>
                                     </form>
                                 </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6">
                                 
-                                <div class="contact-text-container">
-                                    <div class="row">
-                                    <div class="col-lg-8 col-12">
-                                        <h3 class="mb-12">How to Reach Us</h3>
-                                    <p class="light-gray mb-32">Your email address is safe with us*</p>
-                                    <div class="detail-block mb-24">
-                                        <div class="icon-box">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path
-                                                    d="M7.60997 15.7913C7.69691 15.9217 7.84328 16 8 16C8.15672 16 8.30309 15.9217 8.39003 15.7913C9.49937 14.1273 11.1333 12.0723 12.272 9.98222C13.1824 8.31109 13.625 6.88581 13.625 5.625C13.625 2.52338 11.1016 0 8 0C4.89838 0 2.375 2.52338 2.375 5.625C2.375 6.88581 2.81759 8.31109 3.72803 9.98222C4.86581 12.0707 6.50291 14.1307 7.60997 15.7913ZM8 0.9375C10.5847 0.9375 12.6875 3.04031 12.6875 5.625C12.6875 6.72512 12.2823 8.00369 11.4487 9.53372C10.4672 11.3352 9.06669 13.1627 8 14.699C6.93347 13.1629 5.53281 11.3353 4.55128 9.53372C3.71772 8.00369 3.3125 6.72512 3.3125 5.625C3.3125 3.04031 5.41531 0.9375 8 0.9375Z"
-                                                    fill="#ec1d23" />
-                                                <path
-                                                    d="M8 8.4375C9.55081 8.4375 10.8125 7.17581 10.8125 5.625C10.8125 4.07419 9.55081 2.8125 8 2.8125C6.44919 2.8125 5.1875 4.07419 5.1875 5.625C5.1875 7.17581 6.44919 8.4375 8 8.4375ZM8 3.75C9.03387 3.75 9.875 4.59113 9.875 5.625C9.875 6.65887 9.03387 7.5 8 7.5C6.96613 7.5 6.125 6.65887 6.125 5.625C6.125 4.59113 6.96613 3.75 8 3.75Z"
-                                                    fill="#ec1d23" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-12">Store Location:</h6>
-                                            <p class="light-gray">26 South Street, Cairo, NY 98, EGY.</p>
-                                        </div>
-                                    </div>
-                                    <div class="detail-block mb-24">
-                                        <div class="icon-box">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path
-                                                    d="M12.9999 12.4243L12.6662 11.8671C12.0661 10.8777 11.2379 9.74206 10.1516 9.74206C9.9503 9.74206 9.75098 9.78255 9.55369 9.86452L8.97061 10.1146C8.91735 10.1367 8.86561 10.1618 8.81084 10.1884C8.66161 10.261 8.49238 10.3432 8.31832 10.3432C7.88895 10.3432 7.39146 9.78442 6.9177 8.76988C6.45276 7.77409 6.48241 7.25206 6.58914 6.98939C6.70691 6.69958 6.98078 6.57568 7.27499 6.46433C7.3159 6.44881 7.35285 6.43474 7.38879 6.41995L7.97923 6.17134C9.51746 5.52808 8.94521 3.28012 8.75758 2.54311L8.59846 1.90944C8.46243 1.3872 8.10176 0 6.90544 0C6.68397 0 6.4477 0.0515968 6.20343 0.153419C6.04316 0.217068 3.83755 1.11738 3.03849 2.69906C2.08348 4.58173 2.26006 7.10637 3.56283 10.2012C4.85585 13.3 6.53257 15.1954 8.54643 15.8346C8.89188 15.9444 9.28228 15.9999 9.70689 15.9999H9.70711C11.0969 15.9999 12.4688 15.4086 12.5802 15.3596C13.0593 15.1566 13.369 14.8481 13.5007 14.4426C13.7238 13.7549 13.3495 13.0015 12.9999 12.4243ZM12.471 14.1085C12.4404 14.2027 12.334 14.2887 12.155 14.3641C12.1521 14.3654 12.1485 14.3669 12.1454 14.3682C12.133 14.3737 10.8912 14.9176 9.70682 14.9175C9.39349 14.9175 9.11328 14.879 8.87398 14.803C7.17735 14.2644 5.72658 12.576 4.56106 9.78291C3.38689 6.99328 3.19927 4.77469 4.00418 3.18796C4.62919 1.95087 6.5859 1.16609 6.60509 1.15858C6.60899 1.157 6.61281 1.15548 6.61664 1.15389C6.72806 1.10713 6.82793 1.08245 6.90544 1.08245C7.14394 1.08245 7.361 1.45236 7.54964 2.17739L7.70804 2.80838C8.0498 4.15062 7.99777 4.99017 7.56025 5.17318L6.97262 5.4207C6.94924 5.43037 6.92189 5.44054 6.89173 5.45202C6.56713 5.57491 5.89169 5.83052 5.58622 6.58188C5.30904 7.26368 5.42378 8.12921 5.93664 9.22797C6.62739 10.7068 7.4064 11.4257 8.31818 11.4257C8.74135 11.4257 9.08102 11.2606 9.28394 11.162C9.32132 11.1438 9.35474 11.1272 9.39067 11.1123L9.97462 10.8619C10.0349 10.8368 10.0928 10.8246 10.1515 10.8246C10.4326 10.8246 10.9366 11.1029 11.7392 12.426L12.0726 12.9828C12.4836 13.6613 12.5161 13.9695 12.471 14.1085Z"
-                                                    fill="#ec1d23" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-12">Phone Number:</h6>
-                                            <p class="light-gray">+001 123 456 789, +002 321 654 987</p>
-                                        </div>
-                                    </div>
-                                    <div class="detail-block mb-24">
-                                        <div class="icon-box">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path
-                                                    d="M12.9999 12.4243L12.6662 11.8671C12.0661 10.8777 11.2379 9.74206 10.1516 9.74206C9.9503 9.74206 9.75098 9.78255 9.55369 9.86452L8.97061 10.1146C8.91735 10.1367 8.86561 10.1618 8.81084 10.1884C8.66161 10.261 8.49238 10.3432 8.31832 10.3432C7.88895 10.3432 7.39146 9.78442 6.9177 8.76988C6.45276 7.77409 6.48241 7.25206 6.58914 6.98939C6.70691 6.69958 6.98078 6.57568 7.27499 6.46433C7.3159 6.44881 7.35285 6.43474 7.38879 6.41995L7.97923 6.17134C9.51746 5.52808 8.94521 3.28012 8.75758 2.54311L8.59846 1.90944C8.46243 1.3872 8.10176 0 6.90544 0C6.68397 0 6.4477 0.0515968 6.20343 0.153419C6.04316 0.217068 3.83755 1.11738 3.03849 2.69906C2.08348 4.58173 2.26006 7.10637 3.56283 10.2012C4.85585 13.3 6.53257 15.1954 8.54643 15.8346C8.89188 15.9444 9.28228 15.9999 9.70689 15.9999H9.70711C11.0969 15.9999 12.4688 15.4086 12.5802 15.3596C13.0593 15.1566 13.369 14.8481 13.5007 14.4426C13.7238 13.7549 13.3495 13.0015 12.9999 12.4243ZM12.471 14.1085C12.4404 14.2027 12.334 14.2887 12.155 14.3641C12.1521 14.3654 12.1485 14.3669 12.1454 14.3682C12.133 14.3737 10.8912 14.9176 9.70682 14.9175C9.39349 14.9175 9.11328 14.879 8.87398 14.803C7.17735 14.2644 5.72658 12.576 4.56106 9.78291C3.38689 6.99328 3.19927 4.77469 4.00418 3.18796C4.62919 1.95087 6.5859 1.16609 6.60509 1.15858C6.60899 1.157 6.61281 1.15548 6.61664 1.15389C6.72806 1.10713 6.82793 1.08245 6.90544 1.08245C7.14394 1.08245 7.361 1.45236 7.54964 2.17739L7.70804 2.80838C8.0498 4.15062 7.99777 4.99017 7.56025 5.17318L6.97262 5.4207C6.94924 5.43037 6.92189 5.44054 6.89173 5.45202C6.56713 5.57491 5.89169 5.83052 5.58622 6.58188C5.30904 7.26368 5.42378 8.12921 5.93664 9.22797C6.62739 10.7068 7.4064 11.4257 8.31818 11.4257C8.74135 11.4257 9.08102 11.2606 9.28394 11.162C9.32132 11.1438 9.35474 11.1272 9.39067 11.1123L9.97462 10.8619C10.0349 10.8368 10.0928 10.8246 10.1515 10.8246C10.4326 10.8246 10.9366 11.1029 11.7392 12.426L12.0726 12.9828C12.4836 13.6613 12.5161 13.9695 12.471 14.1085Z"
-                                                    fill="#ec1d23" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-12">Email Address:</h6>
-                                            <a href="mailto:info@example.com" class="light-gray">exampleinfo@gmail.com</a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-lg-4 col-12 d-flex justify-content-start align-items-center">
-                                    <ul class="list-unstyled social-link mb-40"> 
-                                        
-                                        <li style="--i:0;--clr:#1877f2;" data-text="Facebook">
-                                            <a href="">
-                                                <span>
-                                                    <i class="fa-brands fa-facebook-f"></i>
-                                                </span>
-                                                Facebook
-                                            </a>
-                                        </li>
-                                        <li style="--i:1;--clr:#fd1d89;" data-text="Instagram">
-                                            <a href="">
-                                                <span>
-                                                    <i class="fa-brands fa-instagram"></i>
-                                                </span>
-                                                Instagram
-                                            </a>
-                                        </li>
-                                        <li style="--i:2;--clr:#1DA1F2;" data-text="Twitter">
-                                            <a href="">
-                                                <span>
-                                                    <i class="fa-brands fa-x-twitter"></i>
-                                                </span>
-                                                Twitter
-                                            </a>
-                                        </li>
-                                        <li style="--i:3;--clr:#25d366;" data-text="Whatsapp">
-                                            <a href="">
-                                                <span>
-                                                    <i class="fa-brands fa-whatsapp"></i>
-                                                </span>
-                                                Whatsapp
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    </div>
-                                </div>
-
-                                    
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Contact Wrapper End -->
-                     <!-- Location Map -->
-                    <div class="map mt-16">
-                        <div class="map-wrapper">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6912.321006190183!2d31.305929000000003!3d29.974817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145839bcf22be42f%3A0xefd6844a3877b87f!2z2KfZhNmC2LXZiNin2KEg2YTZhNi12YbYp9i52Ycg2YjYp9mE2KrYrNin2LHZhw!5e0!3m2!1sen!2seg!4v1752742071507!5m2!1sen!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    <!-- Location Map -->
                 </div>
-            </section>
+            </div>
+        </section>
+        <!-- page-cart -->
+
+        <div class="btn-sidebar-account">
+            <button data-bs-toggle="offcanvas" data-bs-target="#mbAccount" aria-controls="offcanvas">
+                <i class="fas fa-user"></i></button>
+        </div>
+
+
 
             <!-- Benefits Start -->
-            <div id='footer'>
-                     </div>
+             <div id='footer'>
+             </div>
             <!-- Benefits End -->
         </main>
         <!-- Main Sections -->
@@ -654,6 +623,19 @@
     <!-- Back To Top Start -->
     <a href="#main-wrapper" id="backto-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
 
+            <!-- sidebar account-->
+    <div class="offcanvas offcanvas-start canvas-filter canvas-sidebar canvas-sidebar-account" id="mbAccount">
+        <div class="canvas-wrapper">
+            <header class="canvas-header">
+                <span class="title">ACCOUNT INFORMATION</span>
+                <span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                </span>
+            </header>
+            <div class="canvas-body sidebar-mobile-append"> </div>
+        </div>
+    </div>
+    <!-- End sidebar account -->
     <!-- Mobile Menu Start -->
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
@@ -663,6 +645,14 @@
                 <a href="index.html" aria-label="logo image"><img src="assets/media/qaswaa-logo.webp" alt=""></a>
             </div>
             <div class="mobile-nav__container"></div>
+            <div class="cart-wishlist-mobile">
+                <a href="wishlist.html" class="button-block d-sm-flex ">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#" class="button-block d-sm-flex cart-button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+            </div>
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fas fa-envelope"></i>
@@ -681,6 +671,317 @@
         </div>
     </div>
     <!-- Mobile Menu End -->
+
+    <!-- Filter Sidebar -->
+    <div class="sidebar toggle-sidebar bg-white">
+        <form action="shop-grid-1.html" class="mb-24">
+            <input type="text" name="search" id="searchBar" class="form-control" placeholder="Search Here...">
+            <button>
+                <i class="fa-light fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="hr-line mb-24"></div>
+        <div class="category-block box-1 mb-24">
+            <div class="title mb-24" data-count="1">
+                <h6>Product Categories</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <ul class="list-unstyled">
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="cable-check" class="sub-check-box">
+                                <label for="cable-check">Cooking</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="hdmi-check">
+                                    <label for="hdmi-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="ethernet-check">
+                                    <label for="ethernet-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <div class="check-block">
+                                    <input type="checkbox" id="usb-check">
+                                    <label for="usb-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="cases-check" class="sub-check-box">
+                                <label for="cases-check">Pastry-Bakery</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="cover-check">
+                                    <label for="cover-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="mobile-check">
+                                    <label for="mobile-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="screen-check" class="sub-check-box">
+                                <label for="screen-check">Housekeeping</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="glass-check">
+                                    <label for="glass-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="gorilla-check">
+                                    <label for="gorilla-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <div class="check-block">
+                                    <input type="checkbox" id="matte-check">
+                                    <label for="matte-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="charger-check" class="sub-check-box">
+                                <label for="charger-check">Buffet</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="adaptor-check">
+                                    <label for="adaptor-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="rapid-check">
+                                    <label for="rapid-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="checkbox-group">
+                        <div class="arrow-block d-flex align-items-center justify-content-between mb-16">
+                            <div class="check-block">
+                                <input type="checkbox" id="headphone-check" class="sub-check-box">
+                                <label for="headphone-check">Tableware</label>
+                            </div>
+                            <i class="fa-thin fa-chevron-down fw-500 light-gray"></i>
+                        </div>
+                        <ul class="sub-checkboxes pl-16 mb-16">
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="earbuds-check">
+                                    <label for="earbuds-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 mb-12">
+                                <div class="check-block">
+                                    <input type="checkbox" id="handfree-check">
+                                    <label for="handfree-check">Pan non stick coated 26 cm</label>
+                                </div>
+                                <p class="light-gray fw-400">(20)</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr-line mb-24"> </div>
+        <div class="category-block box-2 mb-24">
+            <div class="title mb-32" data-count="2">
+                <h6>Filter By Price</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <div class="wrapper">
+                    <div class="price-input mb-24">
+                        <div class="field">
+                            <div class="fw-500 mb-4p">Low</div>
+                            <input type="number" class="input-min" value="2500">
+                        </div>
+                        <div class="field">
+                            <div class="fw-500 mb-4p">High</div>
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-line mb-24"></div>
+        <div class="category-block box-3 mb-24">
+            <div class="title mb-32" data-count="3">
+                <h6>Filter By Availability</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center justify-content-between mb-12">
+                        <div class="check-block">
+                            <input type="checkbox" id="check-64">
+                            <label for="check-64">In stock</label>
+                        </div>
+                        <p class="light-gray fw-400">(20)</p>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-12">
+                        <div class="check-block">
+                            <input type="checkbox" id="check-128">
+                            <label for="check-128">Out of stock</label>
+                        </div>
+                        <p class="light-gray fw-400">(20)</p>
+                    </li>
+                     
+                </ul>
+            </div>
+        </div>
+        <div class="hr-line mb-24"></div>
+        <div class="category-block box-6 mb-24">
+            <div class="title mb-24" data-count="6">
+                <h6>Filter By Reviews</h6>
+                <span>
+                    <i class="far fa-horizontal-rule"></i>
+                </span>
+            </div>
+            <div class="content-block">
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating">
+                        <input type="radio" id="1-star" checked name="rating" value="1">
+                        <label for="1-star" class="star">&#9733;</label>
+                        <input type="radio" id="2-stars" name="rating" value="2">
+                        <label for="2-stars" class="star">&#9733;</label>
+                        <input type="radio" id="3-stars" name="rating" value="3">
+                        <label for="3-stars" class="star">&#9733;</label>
+                        <input type="radio" id="4-stars" name="rating" value="4">
+                        <label for="4-stars" class="star">&#9733;</label>
+                        <input type="radio" id="5-stars" name="rating" value="5">
+                        <label for="5-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating">
+                        <input type="radio" id="11-star" name="rating2" value="11">
+                        <label for="11-star" class="star">&#9733;</label>
+                        <input type="radio" id="12-stars" checked name="rating2" value="12">
+                        <label for="12-stars" class="star">&#9733;</label>
+                        <input type="radio" id="13-stars"  name="rating2" value="13">
+                        <label for="13-stars" class="star">&#9733;</label>
+                        <input type="radio" id="14-stars" name="rating2" value="14">
+                        <label for="14-stars" class="star">&#9733;</label>
+                        <input type="radio" id="15-stars" name="rating2" value="15">
+                        <label for="15-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating ">
+                        <input type="radio" id="21-star" name="rating3" value="21">
+                        <label for="21-star" class="star">&#9733;</label>
+                        <input type="radio" id="22-stars" name="rating3" value="22">
+                        <label for="22-stars" class="star">&#9733;</label>
+                        <input type="radio" id="23-stars" checked name="rating3" value="23">
+                        <label for="23-stars" class="star">&#9733;</label>
+                        <input type="radio" id="24-stars" name="rating3" value="24">
+                        <label for="24-stars" class="star">&#9733;</label>
+                        <input type="radio" id="25-stars" name="rating3" value="25">
+                        <label for="25-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating ">
+                        <input type="radio" id="31-star" name="rating4" value="31">
+                        <label for="31-star" class="star">&#9733;</label>
+                        <input type="radio" id="32-stars" name="rating4" value="32">
+                        <label for="32-stars" class="star">&#9733;</label>
+                        <input type="radio" id="33-stars" name="rating4" value="33">
+                        <label for="33-stars" class="star">&#9733;</label>
+                        <input type="radio" id="34-stars" checked name="rating4" value="34">
+                        <label for="34-stars" class="star">&#9733;</label>
+                        <input type="radio" id="35-stars" name="rating4" value="35">
+                        <label for="35-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-16">
+                    <div class="star-rating">
+                        <input type="radio" id="41-star" name="rating5" value="41">
+                        <label for="41-star" class="star">&#9733;</label>
+                        <input type="radio" id="42-stars" name="rating5" value="42">
+                        <label for="42-stars" class="star">&#9733;</label>
+                        <input type="radio" id="43-stars" name="rating5" value="43">
+                        <label for="43-stars" class="star">&#9733;</label>
+                        <input type="radio" id="44-stars" name="rating5" value="44">
+                        <label for="44-stars" class="star">&#9733;</label>
+                        <input type="radio" id="45-stars" checked name="rating5" value="45">
+                        <label for="45-stars" class="star">&#9733;</label>
+                    </div>
+                    <p class="light-gray fw-400">(20)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- Filter Sidebar -->
 
     <!-- Modal -->
     <div class="modal fade" id="productQuickView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
@@ -857,7 +1158,7 @@
     <!-- Shopping Cart Popup End -->
 
     <!-- Modal -->
-    <div class="modal fade" id="comparepopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+   <div class="modal fade" id="comparepopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog compare-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -980,6 +1281,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- Jquery Js -->
     <script src="assets/js/vendor/bootstrap.min.js"></script>
