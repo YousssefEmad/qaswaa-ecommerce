@@ -1980,7 +1980,9 @@ Helpers
 .color-ter {
   color: #353797;
 }
-
+.color-yellow{
+      color: #ffe603;
+}
 .dark-black {
   color: #0C0C0D !important;
 }
@@ -3653,6 +3655,8 @@ header .header-section .header-center .header-buttons .button-block i {
 header .header-section .header-center .header-buttons .button-block svg{
   font-weight: 300;
     color: #000000;
+    width: 35px;
+    height: 35px;
 }
 header .header-section .header-center .header-buttons .button-block .wishlist-count,
 header .header-section .header-center .header-buttons .button-block .cart-count {
@@ -3723,7 +3727,7 @@ header .header-section .header-bottom-area .navigation .menu-button-right .main-
 }
 header .header-section .header-bottom-area .navigation .menu-button-right .main-menu__nav .main-menu__list > li > a,
 header .header-section .header-bottom-area .navigation .menu-button-right .main-menu__nav .stricky-header .main-menu__list > li > a {
-  font-size: clamp(15px, 0.833vw, 22px);
+  font-size: clamp(12px, 0.833vw, 22px);
   font-family: "Bai Jamjuree", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -4198,6 +4202,10 @@ header .header-section .mixin-container .input-field input {
 header .header-section .mixin-container .input-field button {
   position: absolute;
   right: 0;
+  padding: 17px 30px;
+  border-radius: clamp(6px, 0.521vw, 20px);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 @media (max-width: 1599px) {
   header .header-section .mixin-container .input-field button {
@@ -4529,10 +4537,10 @@ header .header-section .mixin-container .input-field button {
 }
 
 .categories-sec .categories-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
+}
+.mySwiper-categoury{
+  overflow: unset !important;
 }
 @media (max-width: 576px) {
   .categories-sec .categories-wrapper {
@@ -5207,7 +5215,7 @@ footer .footer-wrapper .footer-link-block .footer-link .img-box {
   border: 1px solid #979797;
 }
 footer .footer-wrapper .footer-link-block .footer-link .img-box i{
-  color: #323793;
+  color: #000;
 }
 .footer-link .icon-box img{
   filter: brightness(0);
@@ -8282,98 +8290,106 @@ a[href="tel:"] {
 .number-call{
   direction: ltr;
 }
-html[dir="rtl"] body {
-  direction: rtl;
-  text-align: right;
-}
-html[dir="rtl"] header .header-section .mixin-container .input-field button {
+html[dir="rtl"] {
+  body {
+    direction: rtl;
+    text-align: right;
+  }
+  header .header-section .mixin-container .input-field button {
     position: absolute;
     right: unset;
     left: 0;
 }
-html[dir="rtl"] header .header-section .header-center .header-buttons .button-block .wishlist-count, html[dir="rtl"] header .header-section .header-center .header-buttons .button-block .cart-count{
+header .header-section .header-center .header-buttons .button-block .wishlist-count, header .header-section .header-center .header-buttons .button-block .cart-count{
   right: unset;
   left: -8px;
 }
-html[dir="rtl"] .cus-btn-arrow svg{
+.cus-btn-arrow svg{
   transform: rotate(180deg);
 }
-html[dir="rtl"] .slider-arrow .arrow svg {
+.slider-arrow .arrow svg {
   transform: rotate(180deg);
 }
-html[dir="rtl"] .newsletter-section .newsletter-container form button{
+.newsletter-section .newsletter-container form button{
   position: absolute;
   right: unset;
   left: 0;
 }
-html[dir="rtl"] .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=tel]{
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=tel]{
   padding-right: 80px;
   padding-left: 0;
   text-align: right;
 }
-html[dir="rtl"] .intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container{
+.intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container{
   left: unset;
   right: 15px;
 }
-html[dir="rtl"] .intl-tel-input.iti-container {
+.intl-tel-input.iti-container {
     position: absolute;
     top: -1000px;
     left: 900px !important;
   }
- html[dir="rtl"] .intl-tel-input .country-list .country {
+  .intl-tel-input .country-list .country {
     padding: 5px 10px;
     text-align: right;
 }
-html[dir="rtl"] header .header-section .header-bottom-area .nav-container .all-category-list{
+header .header-section .header-bottom-area .nav-container .all-category-list{
       right: -4px;
       left: unset;
 }
- html[dir="rtl"] .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input,  html[dir="rtl"] .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text],  html[dir="rtl"] .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]{
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input,  .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]{
   padding-right: 80px;
   padding-left: 0;
   text-align: right;
 }
- html[dir="rtl"] header .header-section .header-bottom-area .nav-container .all-category-list-item:hover .category-second-list{
+ header .header-section .header-bottom-area .nav-container .all-category-list-item:hover .category-second-list{
   left: unset;
   right: 100%;
  }
- html[dir="rtl"] header .header-section .header-bottom-area .nav-container .all-category-list-link i{
+ header .header-section .header-bottom-area .nav-container .all-category-list-link i{
   transform: rotate(180deg);
  }
- html[dir="rtl"] .input-block svg{
+ .input-block svg{
       left: 16px;
       right: unset;
  }
- html[dir="rtl"] .form-control {
+ .form-control {
     text-align: right;
  }
- html[dir="rtl"] .faq .faq-block .accordion-button::after{
+ .faq .faq-block .accordion-button::after{
       right: unset;
       left: 0;
  }
- html[dir="rtl"] .sidebar form button {
+ .sidebar form button {
     position: absolute;
     top: 16px;
     right: unset;
     left: 16px;
  }
- html[dir="rtl"] .wrapper-dropdown .topbar-dropdown {
+ .wrapper-dropdown .topbar-dropdown {
     top: 167%;
     right: -80px;
     left: 0;
  }
- html[dir="rtl"] .btn-sidebar-account, html[dir="rtl"] .btn-sidebar-style2{
+ .btn-sidebar-account, .btn-sidebar-style2{
   left: unset;
   right: 5px;
  }
- html[dir="rtl"] .widget-timeline .timeline::before{
+ .widget-timeline .timeline::before{
   right: 10px;
   left: unset;
  }
- html[dir="rtl"] .widget-timeline .timeline > li .timeline-badge{
+ .widget-timeline .timeline > li .timeline-badge{
       right: 0;
       left: unset;
  }
+ header .header-section .mixin-container .input-field button{
+  border-top-left-radius: clamp(6px, 0.521vw, 20px);
+    border-bottom-left-radius: clamp(6px, 0.521vw, 20px);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+ }
+}  
 @media (max-width: 399px) {
     html[dir="rtl"] header .header-section .mixin-container .input-field input {
        padding: 8px 0px 8px 75px;

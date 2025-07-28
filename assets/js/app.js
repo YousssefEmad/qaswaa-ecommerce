@@ -682,8 +682,36 @@ var swiper = new Swiper(".mySwiper", {
           577: {
             slidesPerView: 2,
           },
-          992: {
+          1200: {
+            slidesPerView: 3,
+          },
+          1920: {
             slidesPerView: 4,
+          },
+        }
+    });
+    var swiper = new Swiper(".mySwiper-categoury", {
+      slidesPerView: 4,
+      spaceBetween: 15,
+      loop: true,
+      speed: 2000,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 5,
+          },
+          1285: {
+            slidesPerView: 10,
           },
         }
     });
@@ -707,7 +735,10 @@ var swiper = new Swiper(".mySwiper", {
           577: {
             slidesPerView: 3,
           },
-          992: {
+          1280: {
+            slidesPerView: 4,
+          },
+          1920: {
             slidesPerView: 6,
           },
         }
