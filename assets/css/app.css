@@ -4539,9 +4539,6 @@ header .header-section .mixin-container .input-field button {
 .categories-sec .categories-wrapper {
   width: 100%;
 }
-.mySwiper-categoury{
-  overflow: unset !important;
-}
 @media (max-width: 576px) {
   .categories-sec .categories-wrapper {
     flex-wrap: wrap;
